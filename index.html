@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motherload — Creative Production Agency</title>
+  <meta name="description" content="Motherload is a creative production agency producing events, media and independent software for iOS and web." />
+
+  <!-- Open Graph (how the link looks when shared) -->
+  <meta property="og:title" content="Motherload — Creative Production Agency" />
+  <meta property="og:description" content="Producing events, media and independent software for iOS and web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://motherload.xyz" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #14141a;
+      --muted: #6b6b76;
+      --line: #ececf0;
+      --accent: #4f46e5;
+      --accent-fg: #ffffff;
+      --card: #fafafb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0d10;
+        --fg: #f2f2f5;
+        --muted: #9a9aa5;
+        --line: #232329;
+        --accent: #7c74ff;
+        --accent-fg: #0d0d10;
+        --card: #141418;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header / nav */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 650;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    .logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 56px 0 40px;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(34px, 7vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin: 0 0 18px;
+      font-weight: 700;
+    }
+    .lede {
+      font-size: 19px;
+      color: var(--muted);
+      margin: 0 0 32px;
+      max-width: 52ch;
+    }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: opacity .15s ease, transform .05s ease;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary { background: var(--accent); color: var(--accent-fg); }
+    .btn-primary:hover { opacity: .9; }
+    .btn-ghost { border-color: var(--line); color: var(--fg); }
+    .btn-ghost:hover { background: var(--card); }
+
+    /* About */
+    section.block {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      font-weight: 600;
+      margin: 0 0 16px;
+    }
+    section.block p {
+      font-size: 17px;
+      margin: 0 0 16px;
+    }
+    section.block p:last-child { margin-bottom: 0; }
+
+    /* Footer */
+    footer {
+      padding: 40px 0 56px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--fg); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <span class="logo">M</span>
+        <span>Motherload</span>
+      </div>
+      <a class="btn btn-ghost" href="mailto:team@motherload.xyz">Contact</a>
+    </header>
+
+    <main>
+      <div class="hero">
+        <span class="eyebrow">Creative Production Agency</span>
+        <h1>Events, media &amp; software, made with intent.</h1>
+        <p class="lede">
+          Motherload is a creative production agency. We produce events and
+          media, and build independent software &mdash; iOS and web apps.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:team@motherload.xyz">Get in touch</a>
+        </div>
+      </div>
+
+      <section class="block">
+        <h2>About</h2>
+        <p>
+          Motherload is a creative production agency producing events and media,
+          and developing independent software for iOS and the web. We work on
+          our own products and take on select collaborations.
+        </p>
+        <p>
+          For enquiries, reach us at
+          <a href="mailto:team@motherload.xyz" style="color:var(--accent);text-decoration:none;">team@motherload.xyz</a>.
+        </p>
+      </section>
+
+      <!-- Impressum — legally required for a German business (§5 DDG / §18 MStV). -->
+      <section class="block" id="impressum">
+        <h2>Impressum</h2>
+        <p>
+          <strong>MOTHER LOADING UG (haftungsbeschr&auml;nkt)</strong><br />
+          Stresemannstr. 23<br />
+          10963 Berlin, Germany
+        </p>
+        <p>
+          Vertreten durch die Gesch&auml;ftsf&uuml;hrung: Leanne Mark<br />
+          Registergericht: Amtsgericht Charlottenburg (Berlin)<br />
+          Registernummer: HRB 250040 B
+        </p>
+        <p>
+          Kontakt:
+          <a href="mailto:team@motherload.xyz" style="color:var(--accent);text-decoration:none;">team@motherload.xyz</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 MOTHER LOADING UG (haftungsbeschr&auml;nkt)</span>
+      <a href="mailto:team@motherload.xyz">team@motherload.xyz</a>
+    </footer>
+  </div>
+</body>
+</html>
